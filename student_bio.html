@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="student_bio_style.css"/>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+  <script>
+  /* Simple use of a jquery function to hide content */
+  $(document).ready(function(){
+    $("p").click(function(){
+        $(this).hide();
+    });
+  }); 
+  </script>
+  <!--script type="text/javascript">
+  function showImage(){
+  $("#sonee").toggle();
+  }
+  </script-->
+  <script>
+    $(document).ready(function(){
+     $("button").click(function(){
+        $("#sonee").fadeIn();
+        $("#sonee").fadeIn("slow");
+        $("#sonee").fadeIn(5000);
+      });
+    });
+  </script>
+
+</head>
+<body bgcolor="#999999">
+	<h1>Student Bio</h1>
+	<h2>Matthew A. Marsh</h2>
+  <div id="sonee" style="width:80px;height:80px;display:none;background-color:red;">
+    <img id="sonee" src="https://i.imgur.com/g9CF1ZY.jpg?2"/>
+  </div>
+	
+    <p>Hello! My name is Matthew Marsh! Above is a picture of Sonya.</p>
+    <p><button>Click to see Sonya!!</button></p>
+    <h2>Contact Info</h2>
+
+    <ul>
+    	<li><h3>Email <a href="matthewmarshdev@gmail.com">matthewmarshdev@gmail.com</a></h3></li>
+    	<li><h3>Github <a href="https://github.com/matthewmarshdev/Basic-Portfolio">matthews portfolio</a></h3></li>
+    	<li><h3>Portfolio <a href="https://github.com/matthewmarshdev/Basic-Portfolio">coming soon</a></h3></li>
+    </ul>
+</body>
+</html>
